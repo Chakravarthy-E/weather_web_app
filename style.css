@@ -1,0 +1,89 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #DDE6ED;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.weathericon {
+  width: 200px;
+}
+.container h1 {
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 10px;
+  color: #27374D;
+}
+.search-container {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.search-container input {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: #DDE6ED;
+}
+.search-container button {
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #27374D;
+  color: white;
+  cursor: pointer;
+}
+.search-container button:hover {
+  background-color: black;
+}
+.search-container select {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background-color: #27374D;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+}
+
+#weatherInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#weatherInfo h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  color: #526D82;
+  margin-bottom: 10px;
+}
+#weatherInfo p {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #27374D;
+}
+
+#weatherInfo p span{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 25px;
+  color: #526D82;
+  font-weight: normal;
+  font-weight: bold;
+
+
+}

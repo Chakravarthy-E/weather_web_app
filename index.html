@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;900&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,600&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather Web App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Web App</h1>
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Enter location"
+        />
+        <button class="search-button">Get Weather</button>
+        <select id="unitToggle">
+          <option value="metric">Celsius</option>
+          <option value="imperial">Fahrenheit</option>
+        </select>
+        <button id="geolocationButton">Use My Location</button>
+      </div>
+      <div>
+        <img src="" alt="" class="weathericon" />
+      </div>
+      <div class="weather-info" id="weatherInfo">
+        <!-- Weather data will be displayed here -->
+      </div>
+      <p class="error" style="display: none">
+        Location not found. Please try again.
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
