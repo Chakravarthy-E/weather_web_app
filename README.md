@@ -39,7 +39,7 @@ When there is an issue with the API request.
 In case of an error, a user-friendly error message will be displayed, guiding you on how to proceed.
 
 <h3>4. Styling</h3>
-   The app features a clean and visually appealing design with attention to layout, color scheme, and readability. CSS styles have been applied to enhance the user experience.
+   The app features a clean and visually appealing design with attention to layout, colour scheme, and readability. CSS styles have been applied to enhance the user experience.
 
 5. Responsive Design
    The Weather Web App is designed to be responsive and functions well on both desktop and mobile devices. It has been tested for usability on various screen sizes.
@@ -51,19 +51,19 @@ bash
 Copy code
 git clone https://github.com/your-username/weather-web-app.git
 Open the project directory:
-<hr>
+
 bash
 Copy code
 cd weather-web-app
 Open index.html in your web browser to launch the application.
 
+<br>
 Usage
 Enter a location (e.g., city or ZIP code) in the input field.
-
 Choose the preferred temperature unit (Celsius or Fahrenheit) from the unit toggle dropdown.
-
+<br>
 Click the "Get Weather" button to fetch weather data for the entered location.
-
+<br>
 Optionally, click the "Use My Location" button to automatically fetch weather data for your current location (requires geolocation permissions).
 
 Dependencies
