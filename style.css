@@ -1,10 +1,10 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #DDE6ED;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -16,11 +16,13 @@
 .weathericon {
   width: 200px;
 }
+
 .container h1 {
   font-family: "Ubuntu", sans-serif;
   margin-bottom: 10px;
   color: #27374D;
 }
+
 .search-container {
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -29,13 +31,16 @@
   flex-wrap: wrap;
   gap: 10px;
 }
+
 .search-container input {
   padding: 15px;
   border: 1px solid black;
   border-radius: 10px;
   margin-bottom: 10px;
   background-color: #DDE6ED;
+  width: 100%; /* Make input field responsive */
 }
+
 .search-container button {
   width: 120px;
   height: 40px;
@@ -45,14 +50,17 @@
   color: white;
   cursor: pointer;
 }
+
 .search-container button:hover {
   background-color: black;
 }
+
 .search-container select {
   width: 100px;
   height: 40px;
   border-radius: 10px;
   border: none;
+  text-align: center;
   background-color: #27374D;
   color: white;
   cursor: pointer;
@@ -65,12 +73,14 @@
   align-items: center;
   flex-direction: column;
 }
+
 #weatherInfo h2 {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   color: #526D82;
   margin-bottom: 10px;
 }
+
 #weatherInfo p {
   font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
@@ -78,12 +88,25 @@
   color: #27374D;
 }
 
-#weatherInfo p span{
+#weatherInfo p span {
   font-family: "Ubuntu", sans-serif;
   font-size: 25px;
   color: #526D82;
   font-weight: normal;
-  font-weight: bold;
+}
 
+/* Media Queries for Responsiveness */
 
+@media screen and (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-container input,
+  .search-container select,
+  .search-container button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
